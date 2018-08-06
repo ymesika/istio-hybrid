@@ -89,7 +89,7 @@ cloud.
     1. [Install strongSwan on ICP](#install-strongswan-on-icp)
 1. [Setup Kubeconfig](#3-setup-kubeconfig)
 1. [Setup Watson Tone Analyzer with IBM Cloud](#4-setup-watson-tone-analyzer-with-ibm-cloud)
-1. [Configure](#5-Configure)
+1. [Configure](#5-configure)
 1. [Install](#6-install)
 1. [Verify](#7-verify)
 
