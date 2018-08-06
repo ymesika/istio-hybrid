@@ -213,9 +213,7 @@ $ kubectl get nodes --context=<cluster_ICP_context>
 
 ## 5. Configure
 
-Edit the `config.sh` file with the necessary settings.
-
-### `config.sh:`
+Edit the `config.sh` file with the necessary settings:
 
 ```sh
 # Cluster A Kubeconfig context
