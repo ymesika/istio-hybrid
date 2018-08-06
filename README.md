@@ -12,13 +12,13 @@ initiated by the ICP cluster.
 When you complete this Code Pattern, you will understand how to:
 
 * Connect a private and a public cloud using a VPN tunnel
-* Distribute micro-services between the private and public clusters yet maintain bi-directional connectivity
+* Distribute micro-services between the private and public clusters yet maintain
+bi-directional connectivity
 * Use Istio to conduct the multi-cluster traffic routing
 
-While the example application used by this Code Pattern requires an IBM Cloud
-Kubernetes Service for its
-[Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/), the
-pattern presented here can be used to integrate most of the private and public
+While the example application used by this Code Pattern requires an IBM Cloud 
+for its [Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/), 
+the pattern presented here can be used to integrate most of the private and public
 cluster.
 
 We will deploy Istio on each cluster so that the communication between services
@@ -276,11 +276,12 @@ using the default configuration. -->
 
 <!--Include any relevant links-->
 
-<!-- # Links
-* [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg)
-* [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
-* [Relevancy Training Demo Video](https://www.youtube.com/watch?v=8BiuQKPQZJk)
-* [Relevancy Training Demo Notebook](https://github.com/akmnua/relevancy_passage_bww) -->
+# Links
+* [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/container-service)
+* [IBM Cloud Private](https://www.ibm.com/cloud/private)
+* [Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)
+* [strongSwan OpenSource IPSec VPN](https://www.strongswan.org/)
+* [Istio](https://istio.io/)
 
 <!-- pick the relevant ones from below -->
 # Learn more
