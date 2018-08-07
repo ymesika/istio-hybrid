@@ -5,15 +5,6 @@ set +x
 
 . ./config.sh
 
-CLUSTER_A_NAME=`echo $CLUSTER_A | tr A-Z a-z` # Lower case of context name
-CLUSTER_B_NAME=`echo $CLUSTER_B | tr A-Z a-z` # Lower case of context name
-
-create_ns()
-{
-    kubectl create namespace istio-system --context=$CLUSTER_A
-    kubectl create namespace istio-system --context=$CLUSTER_B
-}
-
 setup_istio()
 {
     # Cluster A
@@ -68,7 +59,6 @@ install_app()
 }
 
 echo "Installing Istio.."
-create_ns
 setup_istio
 
 echo
