@@ -1,3 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+  labels:
+    istio-injection: disabled
 ---
 # Source: istio/charts/galley/templates/configmap.yaml
 apiVersion: v1
@@ -2486,7 +2492,7 @@ metadata:
     app: istio-ingressgateway
     istio: ingressgateway
 spec:
-  type: __INGRESS_GATEWAY_TYPE__
+  type: LoadBalancer
   selector:
     app: istio-ingressgateway
     istio: ingressgateway

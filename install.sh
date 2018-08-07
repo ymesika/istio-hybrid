@@ -18,15 +18,13 @@ setup_istio()
 {
     # Cluster A
     # Install Istio
-    sed -e "s/__INGRESS_GATEWAY_TYPE__/LoadBalancer/g" \
-        istio.yaml | kubectl --context=$CLUSTER_A apply -f -
+    kubectl apply -f istio-1.0.0/istio-demo.yaml --context=$CLUSTER_A
     # Install CoreDNS
     kubectl apply -f cluster-admin/coredns.yaml --context=$CLUSTER_A
     
     # Cluster B
     # Install Istio
-    sed -e "s/__INGRESS_GATEWAY_TYPE__/NodePort/g" \
-        istio.yaml | kubectl --context=$CLUSTER_B apply -f -
+    kubectl apply -f istio-1.0.0/istio-demo.yaml --context=$CLUSTER_B
     # Install CoreDNS
     kubectl apply -f cluster-admin/coredns.yaml --context=$CLUSTER_B
 }

@@ -16,8 +16,8 @@ kubectl delete -f cluster-admin/cluster-b/cross-cluster.yaml --context=$CLUSTER_
 # Delete what was created by setup_istio
 kubectl delete -f cluster-admin/coredns.yaml --context=$CLUSTER_A
 kubectl delete -f cluster-admin/coredns.yaml --context=$CLUSTER_B
-kubectl delete -f istio.yaml --context=$CLUSTER_A
-kubectl delete -f istio.yaml --context=$CLUSTER_B
+kubectl delete -f istio-1.0.0/istio-demo.yaml --context=$CLUSTER_A
+kubectl delete -f istio-1.0.0/istio-demo.yaml --context=$CLUSTER_B
 
 # Delete what was created by create_ns
 kubectl delete namespace istio-system --context=$CLUSTER_A
