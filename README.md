@@ -111,6 +111,8 @@ cluster as a VPN "server" and the other part installing the strongSwan as a
 public one but not vice versa, the "client" is the one that initiates the VPN
 tunnel.
 
+If you require faster error recovery, higher security level or a more elaborate high availability solution than strongSwan, consider using a VPN solution that runs outside of the cluster on dedicated hardware or one of the [IBM Cloud Direct Link](https://console.bluemix.net/docs/infrastructure/direct-link/getting-started.html#get-started-with-ibm-cloud-direct-link) service options.
+
 Instructions below connects an ICP cluster that has no public access to an IKS
 cluster.
 
@@ -279,6 +281,7 @@ using the default configuration. -->
 # Links
 * [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/container-service)
 * [IBM Cloud Private](https://www.ibm.com/cloud/private)
+* [IBM Cloud Direct Link](https://console.bluemix.net/docs/infrastructure/direct-link/getting-started.html#get-started-with-ibm-cloud-direct-link)
 * [Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)
 * [strongSwan OpenSource IPSec VPN](https://www.strongswan.org/)
 * [Istio](https://istio.io/)
